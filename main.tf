@@ -58,8 +58,8 @@ resource "aws_security_group" "de" {
 }
 
 # Use an existing key pair
-data "aws_key_pair" "example_key" {
-  key_name = "example-key"
+data "aws_key_pair" "database" {
+  key_name = "database"
 }
 
 # EC2 instance using default VPC, subnet, and new security group
